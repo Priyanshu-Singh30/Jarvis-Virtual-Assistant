@@ -2,7 +2,7 @@ from openai import OpenAI
 
 
 client= OpenAI(
-    api_key="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",
+    api_key="",
     base_url="https://openrouter.ai/api/v1"
 )
 
@@ -14,5 +14,6 @@ completion = client.chat.completions.create(
 )
 
 print(completion.choices[0].message.content)
+
 
 # pip install openai
