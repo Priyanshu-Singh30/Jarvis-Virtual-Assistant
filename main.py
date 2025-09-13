@@ -37,7 +37,7 @@ def speak(text):
     os.remove("temp.mp3")
 
 def aiProcess(command):
-    client= OpenAI(api_key="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",
+    client= OpenAI(api_key="",
     base_url="https://openrouter.ai/api/v1"
    )   
 
@@ -98,4 +98,5 @@ if __name__== "__main__":
         except Exception as e:
             print("error; {0}".format(e))
     
+
 
